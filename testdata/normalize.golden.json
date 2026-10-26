@@ -1,0 +1,419 @@
+[
+{
+"line": "  const _dateLeft = toDate(dateLeft);",
+"norm": "const dateleft = todate(dateleft)",
+"informative": "const dateleft = todate(dateleft)",
+"tokens": [
+"const",
+"dateleft",
+"=",
+"todate",
+"(",
+"dateleft",
+")"
+],
+"abstract": [
+"const",
+"I",
+"=",
+"I",
+"(",
+"I",
+")"
+]
+},
+{
+"line": "import java.util.List;",
+"norm": "import java.util.list",
+"informative": "",
+"tokens": [
+"import",
+"java",
+".",
+"util",
+".",
+"list"
+],
+"abstract": [
+"I",
+"I",
+".",
+"I",
+".",
+"I"
+]
+},
+{
+"line": "#include <stdio.h>",
+"norm": "#include <stdio.h>",
+"informative": "",
+"tokens": [
+"#",
+"include",
+"<",
+"stdio",
+".",
+"h",
+">"
+],
+"abstract": [
+"#",
+"I",
+"<",
+"I",
+".",
+"I",
+">"
+]
+},
+{
+"line": "#define X 1",
+"norm": "#define x 1",
+"informative": "#define x 1",
+"tokens": [
+"#",
+"define",
+"x",
+"1"
+],
+"abstract": [
+"#",
+"I",
+"I",
+"N"
+]
+},
+{
+"line": "# comment",
+"norm": "# comment",
+"informative": "",
+"tokens": [
+"#",
+"comment"
+],
+"abstract": [
+"#",
+"I"
+]
+},
+{
+"line": "    }",
+"norm": "}",
+"informative": "",
+"tokens": [
+"}"
+],
+"abstract": [
+"}"
+]
+},
+{
+"line": "",
+"norm": "",
+"informative": "",
+"tokens": [],
+"abstract": []
+},
+{
+"line": "// hello",
+"norm": "// hello",
+"informative": "",
+"tokens": [
+"/",
+"/",
+"hello"
+],
+"abstract": [
+"/",
+"/",
+"I"
+]
+},
+{
+"line": " * javadoc",
+"norm": "* javadoc",
+"informative": "",
+"tokens": [
+"*",
+"javadoc"
+],
+"abstract": [
+"*",
+"I"
+]
+},
+{
+"line": "from os import path",
+"norm": "from os import path",
+"informative": "",
+"tokens": [
+"from",
+"os",
+"import",
+"path"
+],
+"abstract": [
+"I",
+"I",
+"I",
+"I"
+]
+},
+{
+"line": "  return a+b;,",
+"norm": "return a+b",
+"informative": "return a+b",
+"tokens": [
+"return",
+"a",
+"+",
+"b"
+],
+"abstract": [
+"return",
+"I",
+"+",
+"I"
+]
+},
+{
+"line": "x = __init__(a)",
+"norm": "x = init__(a)",
+"informative": "x = init__(a)",
+"tokens": [
+"x",
+"=",
+"init__",
+"(",
+"a",
+")"
+],
+"abstract": [
+"I",
+"=",
+"I",
+"(",
+"I",
+")"
+]
+},
+{
+"line": "__private",
+"norm": "private",
+"informative": "private",
+"tokens": [
+"private"
+],
+"abstract": [
+"private"
+]
+},
+{
+"line": "a_b = _c + $d",
+"norm": "a_b = c + $d",
+"informative": "a_b = c + $d",
+"tokens": [
+"a_b",
+"=",
+"c",
+"+",
+"$d"
+],
+"abstract": [
+"I",
+"=",
+"I",
+"+",
+"I"
+]
+},
+{
+"line": "Ünïcödé = 'x'",
+"norm": "ünïcödé = 'x'",
+"informative": "ünïcödé = 'x'",
+"tokens": [
+"ü",
+"nïcödé",
+"=",
+"'x'"
+],
+"abstract": [
+"I",
+"I",
+"=",
+"S"
+]
+},
+{
+"line": "value = 3.14 + 42",
+"norm": "value = 3.14 + 42",
+"informative": "value = 3.14 + 42",
+"tokens": [
+"value",
+"=",
+"3.14",
+"+",
+"42"
+],
+"abstract": [
+"I",
+"=",
+"N",
+"+",
+"N"
+]
+},
+{
+"line": "`tmpl ${x}`",
+"norm": "`tmpl ${x}`",
+"informative": "`tmpl ${x}`",
+"tokens": [
+"`tmpl ${x}`"
+],
+"abstract": [
+"S"
+]
+},
+{
+"line": "\"str\\\"ing\"",
+"norm": "\"str\\\"ing\"",
+"informative": "\"str\\\"ing\"",
+"tokens": [
+"\"str\\\"ing\""
+],
+"abstract": [
+"S"
+]
+},
+{
+"line": "--sql comment",
+"norm": "--sql comment",
+"informative": "",
+"tokens": [
+"-",
+"-",
+"sql",
+"comment"
+],
+"abstract": [
+"-",
+"-",
+"I",
+"I"
+]
+},
+{
+"line": "<!-- html -->",
+"norm": "<!-- html -->",
+"informative": "",
+"tokens": [
+"<",
+"!",
+"-",
+"-",
+"html",
+"-",
+"-",
+">"
+],
+"abstract": [
+"<",
+"!",
+"-",
+"-",
+"I",
+"-",
+"-",
+">"
+]
+},
+{
+"line": "export * from './a'",
+"norm": "export * from './a'",
+"informative": "",
+"tokens": [
+"export",
+"*",
+"from",
+"'./a'"
+],
+"abstract": [
+"I",
+"*",
+"I",
+"S"
+]
+},
+{
+"line": "const x = require('y')",
+"norm": "const x = require('y')",
+"informative": "",
+"tokens": [
+"const",
+"x",
+"=",
+"require",
+"(",
+"'y'",
+")"
+],
+"abstract": [
+"const",
+"I",
+"=",
+"I",
+"(",
+"S",
+")"
+]
+},
+{
+"line": "\"github.com/foo/bar\"",
+"norm": "\"github.com/foo/bar\"",
+"informative": "",
+"tokens": [
+"\"github.com/foo/bar\""
+],
+"abstract": [
+"S"
+]
+},
+{
+"line": "fmt \"fmt\"",
+"norm": "fmt \"fmt\"",
+"informative": "",
+"tokens": [
+"fmt",
+"\"fmt\""
+],
+"abstract": [
+"I",
+"S"
+]
+},
+{
+"line": "if (a) { return; }",
+"norm": "if (a) { return; }",
+"informative": "if (a) { return; }",
+"tokens": [
+"if",
+"(",
+"a",
+")",
+"{",
+"return",
+";",
+"}"
+],
+"abstract": [
+"if",
+"(",
+"I",
+")",
+"{",
+"return",
+";",
+"}"
+]
+}
+]
